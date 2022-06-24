@@ -1,0 +1,42 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/niks/Desktop/ELDD/Export_symbol'
+make -C /lib/modules/5.4.0-120-generic/build M=/home/niks/Desktop/ELDD/Export_symbol modules
+ 
+make[1]: Entering directory '/usr/src/linux-headers-5.4.0-120-generic'
+ 
+make -f ./scripts/Makefile.build obj=/home/niks/Desktop/ELDD/Export_symbol \
+single-build= \
+need-builtin=1 need-modorder=1
+ 
+make -f ./scripts/Makefile.build obj=/home/niks/Desktop/ELDD/Export_symbol/calling/add_sym \
+ \
+need-builtin=1 \
+need-modorder=1
+ 
+scripts/Makefile.build:42: /home/niks/Desktop/ELDD/Export_symbol/calling/add_sym/Makefile: No such file or directory
+
+make[3]: *** No rule to make target '/home/niks/Desktop/ELDD/Export_symbol/calling/add_sym/Makefile'.
+
+make[3]: Failed to remake makefile '/home/niks/Desktop/ELDD/Export_symbol/calling/add_sym/Makefile'.
+
+{  :; } \
+ 
+| awk '!x[$0]++' - > /home/niks/Desktop/ELDD/Export_symbol/calling/add_sym/modules.order
+ 
+:
+ 
+scripts/Makefile.build:519: recipe for target '/home/niks/Desktop/ELDD/Export_symbol/calling/add_sym' failed
+Makefile:1762: recipe for target '/home/niks/Desktop/ELDD/Export_symbol' failed
+test -e ./Module.symvers || ( \
+echo; \
+echo "  WARNING: Symbol version dump ./Module.symvers"; \
+echo "           is missing; modules will have no dependencies and modversions."; \
+echo )
+make[1]: Leaving directory '/usr/src/linux-headers-5.4.0-120-generic'
+Makefile:8: recipe for target 'default' failed
+make: Leaving directory '/home/niks/Desktop/ELDD/Export_symbol'
+ 
+make[2]: *** [/home/niks/Desktop/ELDD/Export_symbol/calling/add_sym] Error 2
+make[1]: *** [/home/niks/Desktop/ELDD/Export_symbol] Error 2
+make: *** [default] Error 2
+

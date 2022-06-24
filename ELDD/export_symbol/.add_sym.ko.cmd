@@ -1,0 +1,1 @@
+cmd_/home/niks/Desktop/ELDD/Export_symbol/add_sym.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/niks/Desktop/ELDD/Export_symbol/add_sym.ko /home/niks/Desktop/ELDD/Export_symbol/add_sym.o /home/niks/Desktop/ELDD/Export_symbol/add_sym.mod.o;  true
