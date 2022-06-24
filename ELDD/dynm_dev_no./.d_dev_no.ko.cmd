@@ -1,0 +1,1 @@
+cmd_/home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.ko /home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.o /home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.mod.o;  true

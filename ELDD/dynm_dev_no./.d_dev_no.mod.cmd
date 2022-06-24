@@ -1,0 +1,1 @@
+cmd_/home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.mod := { echo  /home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.o;  echo; } > /home/niks/Desktop/CDAC-DESD/ELDD/dynm_dev_no./d_dev_no.mod
