@@ -14,7 +14,7 @@ int8_t read_buf[1024];
 int main()
 {
     int fd;
-    char option;
+    int option;
     printf("*************************************\n");
     printf("************www.XYZ.com**************\n");
 
@@ -32,12 +32,12 @@ int main()
         printf("              2. Read                \n");
         printf("              3. Exit                \n");
         printf("*************************************\n");
-        scanf("%c",&option);
-        printf("Your Option = %c\n",option);
+        scanf("%d",&option);
+        printf("Your Option = %d\n",option);
 
         switch(option)
         {
-            case '1':
+            case 1:
             printf("Enter the string to write into driver :");
             scanf("%[^\t\n]s",write_buf);
             printf("Data Writing...");
@@ -45,14 +45,14 @@ int main()
             printf("Done!\n"); 
             break;
 
-            case '2':
+            case 2:
             printf("Data Reading...\n");
             read(fd, read_buf, 1024);
             printf("Done...\n\n");
             printf("Data = %s\n\n", read_buf); 
             break;
 
-            case '3':
+            case 3:
             close(fd);
             exit(1);
             break;

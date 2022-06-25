@@ -71,7 +71,7 @@ static ssize_t char_write(struct file *filp,const char __user *buf, size_t len, 
     // copy the data to kernel space from the user space
     if( copy_from_user(kernel_buffer, buf, len))
     {
-        pr_err("Data Write : Err!\n")
+        pr_err("Data Write : Err!\n");
     }
     pr_info("Data Write : Done!\n");
     return len;
@@ -102,7 +102,7 @@ static int __init char_driver_init(void)
     //creating physical memory
     if((kernel_buffer = kmalloc(mem_size, GFP_KERNEL)) == 0)
     {
-        pr_info("cannot allocate memory in kernel\n")
+        pr_info("cannot allocate memory in kernel\n");
     }
 
     strcpy(kernel_buffer, "Hello_World");
