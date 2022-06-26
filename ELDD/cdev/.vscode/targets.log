@@ -2,13 +2,18 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.1
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
+ 
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 24 22:53:30 2022
+# Make data base, printed on Sat Jun 25 23:08:55 2022
 
 # Variables
 
@@ -37,7 +42,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Desktop/CDAC-DESD/ELDD/cdev
+CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/cdev
 # makefile
 SHELL = /bin/sh
 # environment
@@ -45,7 +50,7 @@ VTE_VERSION = 5202
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:30931
+JOURNAL_STREAM = 9:25298
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -59,19 +64,19 @@ USERNAME = niks
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=7e2a3fb96c2aa05c3f6e10cc62b53926
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /usr/bin/code
 # environment
-MANAGERPID = 2091
+MANAGERPID = 1013
 # environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Desktop/CDAC-DESD/ELDD/cdev
+VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/cdev
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -79,7 +84,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2119,unix/unix:/tmp/.ICE-unix/2119
+SESSION_MANAGER = local/niks:@/tmp/.ICE-unix/1040,unix/niks:/tmp/.ICE-unix/1040
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -91,7 +96,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = ff9b6566af854342a6d147d901d713f2
+INVOCATION_ID = c74c4c9a9bd44098888466378fe0a8c8
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -109,11 +114,11 @@ GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
 # makefile (from 'Makefile', line 5)
-PWD := /home/niks/Desktop/CDAC-DESD/ELDD/cdev
+PWD := /home/niks/Documents/CDAC-DESD/ELDD/cdev
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 2214
+SSH_AGENT_PID = 1135
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -161,7 +166,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7a68af6b-2aec-4547-affc-c211d8e73984.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ad10d19b-ffcc-44db-96da-a889bb4b0b39.sock
 # makefile (from 'Makefile', line 3)
 KERNELDIR = /lib/modules/$(shell uname -r)/build
 # environment
@@ -197,8 +202,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
@@ -213,11 +216,11 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/af581053_ad8d_4431_8e68_64beac51b14f
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/830c2342_c8f5_4cbf_a1d7_4b2cbb379058
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.654
+GNOME_TERMINAL_SERVICE = :1.284
 # default
 SUFFIXES := 
 # environment
@@ -233,11 +236,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 21556
+VSCODE_PID = 19493
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=7e2a3fb96c2aa05c3f6e10cc62b53926
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=16/141=11%
+# Load=111/1024=11%, Rehash=0, Collisions=16/140=11%
 
 # Pattern-specific Variable Values
 
@@ -245,9 +248,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=7e2a3fb96c2aa05c3f6e10c
 
 # Directories
 
-# . (device 2049, inode 4723499): 6 files, no impossibilities.
+# . (device 2049, inode 1049056): 16 files, no impossibilities.
 
-# 6 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,7 +268,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-24 19:28:53.722876956
+#  Last modified 2022-06-25 13:17:24.019993705
 #  File has been updated.
 #  Successfully updated.
 
@@ -279,7 +282,6 @@ default:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -287,7 +289,9 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 14):
+ 
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
 
 install:
@@ -305,12 +309,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 116 B / avg = 8 B
-# current buf: size = 8162 B / used = 116 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 236 B / avg = 9 B
+# current buf: size = 8162 B / used = 236 B / count = 24 / avg = 9 B
 
-# strcache performance: lookups = 21 / hit rate = 33%
+# strcache performance: lookups = 31 / hit rate = 22%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Fri Jun 24 22:53:30 2022
+# Load=24/8192=0%, Rehash=0, Collisions=2/31=6%
+# Finished Make data base on Sat Jun 25 23:08:55 2022
 
  

@@ -1,6 +1,6 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/niks/Desktop/ELDD'
-make: Leaving directory '/home/niks/Desktop/ELDD'
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/niks/Documents/CDAC-DESD/ELDD'
+make: Leaving directory '/home/niks/Documents/CDAC-DESD/ELDD'
  
 make: *** No targets specified and no makefile found.  Stop.
 

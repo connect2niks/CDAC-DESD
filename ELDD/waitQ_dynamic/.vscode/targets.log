@@ -1,17 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.1
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 26 17:59:51 2022
+# Make data base, printed on Sat Jun 25 23:23:50 2022
 
 # Variables
 
@@ -40,7 +35,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Documents/CDAC-DESD/ELDD
+CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
 # makefile
 SHELL = /bin/sh
 # environment
@@ -51,8 +46,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 JOURNAL_STREAM = 9:25298
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
@@ -74,7 +69,7 @@ CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD
+VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -112,7 +107,7 @@ GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/niks/Documents/CDAC-DESD/ELDD
+PWD = /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
 # environment
 XDG_SEAT = seat0
 # environment
@@ -134,7 +129,7 @@ VSCODE_CODE_CACHE_PATH = /home/niks/.config/Code/CachedData/30d9c6cd9483b2cc5866
 # environment
 LOGNAME = niks
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
@@ -162,7 +157,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9bc96006-28e7-460a-b660-cbabcbcfd77b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ad7e680e-609c-42c3-b264-54b5940a1c92.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -210,11 +205,11 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/98f51008_d57b_44d8_8e9c_03a0e552935f
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0b1f8e64_439c_4a47_ba29_993d3d57648f
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.353
+GNOME_TERMINAL_SERVICE = :1.322
 # default
 SUFFIXES := 
 # environment
@@ -230,11 +225,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 28861
+VSCODE_PID = 21324
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=16/131=12%
+# Load=109/1024=11%, Rehash=0, Collisions=16/133=12%
 
 # Pattern-specific Variable Values
 
@@ -242,9 +237,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1049050): 12 files, no impossibilities.
+# . (device 2049, inode 1052556): 5 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 5 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -262,16 +257,9 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-06-25 23:23:32.571522205
 #  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -279,28 +267,23 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
- 
-
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 185 B / avg = 9 B
-# current buf: size = 8162 B / used = 185 B / count = 20 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 10 / storage = 82 B / avg = 8 B
+# current buf: size = 8162 B / used = 82 B / count = 10 / avg = 8 B
 
-# strcache performance: lookups = 23 / hit rate = 13%
+# strcache performance: lookups = 14 / hit rate = 28%
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
-# Finished Make data base on Sun Jun 26 17:59:51 2022
+# Load=10/8192=0%, Rehash=0, Collisions=1/14=7%
+# Finished Make data base on Sat Jun 25 23:23:50 2022
 
  
