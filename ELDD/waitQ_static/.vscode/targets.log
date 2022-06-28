@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 27 15:04:26 2022
+# Make data base, printed on Mon Jun 27 23:55:53 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
+CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/waitQ_static
 # makefile
 SHELL = /bin/sh
 # environment
@@ -71,7 +71,7 @@ CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
+VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/waitQ_static
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -109,7 +109,7 @@ GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
 # makefile (from 'Makefile', line 5)
-PWD := /home/niks/Documents/CDAC-DESD/ELDD/waitQ_dynamic
+PWD := /home/niks/Documents/CDAC-DESD/ELDD/waitQ_static
 # environment
 XDG_SEAT = seat0
 # environment
@@ -135,7 +135,6 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
- 
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 MAKE_VERSION := 4.1
@@ -162,7 +161,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dfbe3b21-33f1-4287-b0ea-ea6e60399bec.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d58e4206-586b-4137-8d27-f82cfa0e9c6b.sock
 # makefile (from 'Makefile', line 3)
 KERNELDIR = /lib/modules/$(shell uname -r)/build
 # environment
@@ -214,7 +213,7 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f21b424f_7ac4_43bc_afee_4d40e12705cb
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0acd236b_a9a5_4e0e_87f3_810989ebcd6f
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -234,7 +233,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4704
+VSCODE_PID = 9158
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # variable set hash-table stats:
@@ -246,7 +245,7 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1052556): 5 files, no impossibilities.
+# . (device 2049, inode 1052644): 5 files, no impossibilities.
 
 # 5 files, no impossibilities in 1 directories.
 
@@ -266,7 +265,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-26 17:59:49.282653887
+#  Last modified 2022-06-26 17:59:49.282653
 #  File has been updated.
 #  Successfully updated.
 
@@ -280,6 +279,7 @@ default:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -311,6 +311,6 @@ install:
 # strcache performance: lookups = 20 / hit rate = 35%
 # hash-table stats:
 # Load=13/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Mon Jun 27 15:04:26 2022
+# Finished Make data base on Mon Jun 27 23:55:53 2022
 
  

@@ -13,33 +13,33 @@
 #include <linux/wait.h>
 
 uint32_t read_count = 0;
-uint32_t write_count = 0;
 static struct task_struct *wait_thread;
+
+DECLARE_WAIT_QUEUE_HEAD(wait_queue_hcwq);
 
 dev_t dev = 0;
 static struct class *dev_class;
-static struct cdev wq_cdev;
-wait_queue_head_t wait_queue_wq;
+static struct cdev hcwq_cdev;
 int wait_queue_flag = 0;
 
 // Function prototype
 
-static int      __init wq_driver_init(void);
-static void     __exit wq_driver_exit(void);
-static int      wq_open (struct inode *inode, struct file *file);
-static int      wq_release(struct inode *inode, struct file *file);
-static ssize_t  wq_read(struct file *filep, char __user *buf, size_t len, loff_t *off);
-static ssize_t  wq_write(struct file *filep,const char  *buf, size_t len, loff_t *off);
+static int      __init hcwq_driver_init(void);
+static void     __exit hcwq_driver_exit(void);
+static int      hcwq_open (struct inode *inode, struct file *file);
+static int      hcwq_release(struct inode *inode, struct file *file);
+static ssize_t  hcwq_read(struct file *filep, char __user *buf, size_t len, loff_t *off);
+static ssize_t  hcwq_write(struct file *filep,const char  *buf, size_t len, loff_t *off);
 
 // file operations structure
 
 static struct file_operations fops =
 {
     .owner      = THIS_MODULE,
-    .read       = wq_read,
-    .write      = wq_write,
-    .open       = wq_open,
-    .release    = wq_release,
+    .read       = hcwq_read,
+    .write      = hcwq_write,
+    .open       = hcwq_open,
+    .release    = hcwq_release,
 };
 
 
@@ -50,7 +50,7 @@ static int wait_function(void *unused)
     while (1)
     {
         pr_info("waiting for the Event....\n");
-        wait_event_interruptible(wait_queue_wq, wait_queue_flag != 0);
+        wait_event_interruptible(wait_queue_hcwq, wait_queue_flag != 0);
         if (wait_queue_flag == 2)
         {
             pr_info("Event came from Exit function\n");
@@ -62,11 +62,6 @@ static int wait_function(void *unused)
             pr_info("Event came from read function %d  \n",++read_count);
         }
         
-        if (wait_queue_flag == 3)
-        {
-            pr_info("Event came from write function  %d  \n ", ++write_count);
-            wait_queue_flag = 0;
-        }
         wait_queue_flag = 0;
         
     }
@@ -74,14 +69,14 @@ static int wait_function(void *unused)
     
 }
 // This function will be called when we open the device file
-static int wq_open(struct inode *inode, struct file *file)
+static int hcwq_open(struct inode *inode, struct file *file)
 {
     pr_info("Driver open Function called....\n");
     return 0;
 }
 // This function will be called when we close the Device file
 
-static int wq_release(struct inode *inode, struct file *file)
+static int hcwq_release(struct inode *inode, struct file *file)
 {
     pr_info("Driver Release Function called....\n");
     return 0;
@@ -89,27 +84,27 @@ static int wq_release(struct inode *inode, struct file *file)
 
 // This function will be called when we read the Device file
 
-static ssize_t wq_read(struct file *filp, char __user *buf, size_t len, loff_t *off)
+static ssize_t hcwq_read(struct file *filp, char __user *buf, size_t len, loff_t *off)
 {
     pr_info("Read Function\n");
     wait_queue_flag = 1;
-    wake_up_interruptible(&wait_queue_wq);
+    wake_up_interruptible(&wait_queue_hcwq);
     return 0;
 }
 
 // This function will be called when we write the Device file
 
-static ssize_t wq_write(struct file *filp,const char __user *buf, size_t len, loff_t *off)
+static ssize_t hcwq_write(struct file *filp,const char __user *buf, size_t len, loff_t *off)
 {
     pr_info("Write Function\n");
     wait_queue_flag = 3;
-    wake_up_interruptible(&wait_queue_wq);
+    wake_up_interruptible(&wait_queue_hcwq);
     return len;
 }
 
 // Module Init Function
 
-static int __init wq_driver_init(void)
+static int __init hcwq_driver_init(void)
 {
     // Allocating Major number
     if((alloc_chrdev_region(&dev, 0,1, "wq_dev")) < 0 )
@@ -121,10 +116,10 @@ static int __init wq_driver_init(void)
     pr_info("Major = %d, Minor = %d\n",MAJOR(dev), MINOR (dev));
     
     // Creating cdev structure 
-    cdev_init(&wq_cdev,&fops);
+    cdev_init(&hcwq_cdev,&fops);
 
     // Adding character device to the system
-    if ((cdev_add(&wq_cdev,dev,1))< 0 )
+    if ((cdev_add(&hcwq_cdev,dev,1))< 0 )
     {
         pr_err("Cannot add the device to the system\n");
         goto r_class;
@@ -145,7 +140,7 @@ static int __init wq_driver_init(void)
     }
 
     //Initialize wait queue
-    init_waitqueue_head(&wait_queue_wq);
+    init_waitqueue_head(&wait_queue_hcwq);
 
     //create the kernel thread with name 'mythread'
     wait_thread = kthread_create(wait_function, NULL, "waitthread");
@@ -171,20 +166,20 @@ r_class:
 
 // Module exit function 
 
-    static void __exit wq_driver_exit(void)
+    static void __exit hcwq_driver_exit(void)
     {
         wait_queue_flag = 2;
-        wake_up_interruptible(&wait_queue_wq);
+        wake_up_interruptible(&wait_queue_hcwq);
         device_destroy(dev_class,dev);
         class_destroy(dev_class);
-        cdev_del(&wq_cdev);
+        cdev_del(&hcwq_cdev);
         unregister_chrdev_region(dev, 1);
         pr_info("Device Driver Remove....Done!!!\n");
 
     }
 
-    module_init(wq_driver_init);
-    module_exit(wq_driver_exit);
+    module_init(hcwq_driver_init);
+    module_exit(hcwq_driver_exit);
 
     MODULE_LICENSE("GPL");
 
