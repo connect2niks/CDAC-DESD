@@ -2,16 +2,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.1
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 26 17:59:51 2022
+# Make data base, printed on Tue Jun 28 10:31:09 2022
 
 # Variables
 
@@ -162,7 +159,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9bc96006-28e7-460a-b660-cbabcbcfd77b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-71c3cb97-26eb-4154-b1f4-cb90b808def1.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -173,8 +170,12 @@ USER = niks
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+# environment
+ZEITGEIST_DATA_PATH = /home/niks/.local/share/zeitgeist
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /home/niks/Documents/CDAC-DESD/ELDD/waitQ_static
 # default
 .VARIABLES := 
 # automatic
@@ -210,11 +211,11 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/98f51008_d57b_44d8_8e9c_03a0e552935f
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0acd236b_a9a5_4e0e_87f3_810989ebcd6f
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.353
+GNOME_TERMINAL_SERVICE = :1.440
 # default
 SUFFIXES := 
 # environment
@@ -230,11 +231,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 28861
+VSCODE_PID = 14778
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=16/131=12%
+# Load=111/1024=11%, Rehash=0, Collisions=16/133=12%
 
 # Pattern-specific Variable Values
 
@@ -242,9 +243,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1049050): 12 files, no impossibilities.
+# . (device 2049, inode 1049050): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -278,6 +279,7 @@ makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 GNUmakefile:
@@ -285,7 +287,6 @@ GNUmakefile:
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
- 
 
 # files hash-table stats:
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
@@ -295,12 +296,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 185 B / avg = 9 B
-# current buf: size = 8162 B / used = 185 B / count = 20 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 198 B / avg = 9 B
+# current buf: size = 8162 B / used = 198 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 23 / hit rate = 13%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
-# Finished Make data base on Sun Jun 26 17:59:51 2022
+# Load=21/8192=0%, Rehash=0, Collisions=1/24=4%
+# Finished Make data base on Tue Jun 28 10:31:09 2022
 
  

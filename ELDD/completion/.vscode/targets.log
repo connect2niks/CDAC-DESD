@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 28 19:18:44 2022
+# Make data base, printed on Wed Jun 29 14:53:49 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/completion
 # makefile
 SHELL = /bin/sh
 # environment
@@ -45,7 +45,7 @@ VTE_VERSION = 5202
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:25298
+JOURNAL_STREAM = 9:26884
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -59,19 +59,21 @@ USERNAME = niks
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=f6f0ab172b297e07a8ab9a0362bc010f
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /usr/bin/code
+# makefile (from 'Makefile', line 2)
+KERNDIR = /lib/modules/$(shell uname -r)/build
 # environment
-MANAGERPID = 1013
+MANAGERPID = 1073
 # environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/completion
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -79,7 +81,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/niks:@/tmp/.ICE-unix/1040,unix/niks:/tmp/.ICE-unix/1040
+SESSION_MANAGER = local/niks:@/tmp/.ICE-unix/1100,unix/niks:/tmp/.ICE-unix/1100
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -91,7 +93,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = c74c4c9a9bd44098888466378fe0a8c8
+INVOCATION_ID = d1b5d606720449fc9bdc76a8169b53a4
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -108,12 +110,12 @@ DISPLAY = :0
 GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
-# makefile (from 'Makefile', line 5)
-PWD := /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+# makefile (from 'Makefile', line 3)
+PWD := /home/niks/Documents/CDAC-DESD/ELDD/completion
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1135
+SSH_AGENT_PID = 1195
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -143,7 +145,7 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile (from 'Makefile', line 1)
-obj-m := realdriver.o
+obj-m := comp.o
 # environment
 XDG_VTNR = 2
 # environment
@@ -161,9 +163,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-477eae01-b0a2-4054-9633-19c9f84ccf92.sock
-# makefile (from 'Makefile', line 3)
-KERNELDIR = /lib/modules/$(shell uname -r)/build
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b24d2166-c419-432f-a64d-9ae75e7b1938.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -174,8 +174,6 @@ USER = niks
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-ZEITGEIST_DATA_PATH = /home/niks/.local/share/zeitgeist
 # default
 MAKE_COMMAND := make
 # default
@@ -199,8 +197,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
@@ -215,11 +211,11 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ecd0b267_f14a_46d9_92de_99825e9bf63b
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/1ccf731d_6202_43fa_b215_7f9ed83647eb
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.1026
+GNOME_TERMINAL_SERVICE = :1.141
 # default
 SUFFIXES := 
 # environment
@@ -235,11 +231,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 22620
+VSCODE_PID = 4410
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=f6f0ab172b297e07a8ab9a0362bc010f
 # variable set hash-table stats:
-# Load=113/1024=11%, Rehash=0, Collisions=16/142=11%
+# Load=111/1024=11%, Rehash=0, Collisions=16/140=11%
 
 # Pattern-specific Variable Values
 
@@ -247,9 +243,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1049140): 7 files, no impossibilities.
+# . (device 2049, inode 1052640): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -267,7 +263,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-25 13:17:24.027993705
+#  Last modified 2022-06-29 14:51:28.07591794
 #  File has been updated.
 #  Successfully updated.
 
@@ -275,12 +271,15 @@ default:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+#  recipe to execute (from 'Makefile', line 6):
+	$(MAKE) -C $(KERNDIR) M=$(PWD) modules
+	gcc -o write_app1 write_app1.c
+	gcc -o write_app2 write_app2.c
+	gcc -o read_app read_app.c
 
 # Not a target:
- 
 .DEFAULT:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -289,30 +288,24 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
-
-install:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules_install
+#  recipe to execute (from 'Makefile', line 12):
+	$(MAKE) -C $(KERNDIR) M=$(PWD) clean
+	rm write_app1 write_app2 read_app
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 128 B / avg = 8 B
-# current buf: size = 8162 B / used = 128 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 145 B / avg = 9 B
+# current buf: size = 8162 B / used = 145 B / count = 16 / avg = 9 B
 
-# strcache performance: lookups = 22 / hit rate = 31%
+# strcache performance: lookups = 22 / hit rate = 27%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Tue Jun 28 19:18:44 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/22=5%
+# Finished Make data base on Wed Jun 29 14:53:49 2022
 
  

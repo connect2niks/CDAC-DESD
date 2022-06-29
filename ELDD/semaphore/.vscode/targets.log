@@ -2,13 +2,17 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.1
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 28 19:18:44 2022
+# Make data base, printed on Tue Jun 28 19:20:28 2022
 
 # Variables
 
@@ -37,7 +41,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/semaphore
 # makefile
 SHELL = /bin/sh
 # environment
@@ -64,6 +68,8 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c
 VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /usr/bin/code
+# makefile (from 'Makefile', line 2)
+KERNDIR = /lib/modules/$(shell uname -r)/build
 # environment
 MANAGERPID = 1013
 # environment
@@ -71,7 +77,7 @@ CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/semaphore
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -108,8 +114,8 @@ DISPLAY = :0
 GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
-# makefile (from 'Makefile', line 5)
-PWD := /home/niks/Documents/CDAC-DESD/ELDD/real_driver
+# makefile (from 'Makefile', line 3)
+PWD := /home/niks/Documents/CDAC-DESD/ELDD/semaphore
 # environment
 XDG_SEAT = seat0
 # environment
@@ -143,7 +149,7 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile (from 'Makefile', line 1)
-obj-m := realdriver.o
+obj-m := sem.o
 # environment
 XDG_VTNR = 2
 # environment
@@ -161,9 +167,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-477eae01-b0a2-4054-9633-19c9f84ccf92.sock
-# makefile (from 'Makefile', line 3)
-KERNELDIR = /lib/modules/$(shell uname -r)/build
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d2320b75-9783-48e3-ade7-7af68fddd3a8.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -199,8 +203,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
@@ -215,7 +217,7 @@ DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ecd0b267_f14a_46d9_92de_99825e9bf63b
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/123b9d55_237e_44ee_8931_c3851a90eed6
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -239,7 +241,7 @@ VSCODE_PID = 22620
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
 # variable set hash-table stats:
-# Load=113/1024=11%, Rehash=0, Collisions=16/142=11%
+# Load=112/1024=11%, Rehash=0, Collisions=16/141=11%
 
 # Pattern-specific Variable Values
 
@@ -247,9 +249,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1049140): 7 files, no impossibilities.
+# . (device 2049, inode 1048937): 8 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -267,7 +269,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-25 13:17:24.027993705
+#  Last modified 2022-06-28 19:19:55.104351318
 #  File has been updated.
 #  Successfully updated.
 
@@ -275,44 +277,44 @@ default:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+#  recipe to execute (from 'Makefile', line 6):
+	$(MAKE) -C $(KERNDIR) M=$(PWD) modules
+	gcc -o write_app1 write_app1.c
+	gcc -o write_app2 write_app2.c
+	gcc -o read_app read_app.c
 
 # Not a target:
- 
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
+ 
 
+ 
 clean:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
-
-install:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules_install
+#  recipe to execute (from 'Makefile', line 12):
+	$(MAKE) -C $(KERNDIR) M=$(PWD) clean
+	rm write_app1 write_app2 read_app
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 128 B / avg = 8 B
-# current buf: size = 8162 B / used = 128 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 15 / storage = 134 B / avg = 8 B
+# current buf: size = 8162 B / used = 134 B / count = 15 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 31%
+# strcache performance: lookups = 21 / hit rate = 28%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Tue Jun 28 19:18:44 2022
+# Load=15/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Tue Jun 28 19:20:28 2022
 
  

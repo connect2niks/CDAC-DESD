@@ -1,0 +1,52 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock'
+make -C /lib/modules/5.4.0-120-generic/build M=/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock modules
+make[1]: Entering directory '/usr/src/linux-headers-5.4.0-120-generic'
+ 
+make -f ./scripts/Makefile.build obj=/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock \
+single-build= \
+need-builtin=1 need-modorder=1
+ 
+set -e;  echo '  CC [M]  /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o';  gcc -Wp,-MD,/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/7/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init  -DMODULE  -DKBUILD_BASENAME='"sem"' -DKBUILD_MODNAME='"sem"' -c -o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.c; scripts/basic/fixdep /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.d /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o 'gcc -Wp,-MD,/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/7/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init  -DMODULE  -DKBUILD_BASENAME='\''"sem"'\'' -DKBUILD_MODNAME='\''"sem"'\'' -c -o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.c' > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.cmd; rm -f /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.d
+set -e;   
+set -e;   
+set -e;   
+set -e;   
+set -e;   if objdump -h /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o | grep -q __ksymtab; then gcc -E -D__GENKSYMS__ -Wp,-MD,/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/7/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init  -DMODULE  -DKBUILD_BASENAME='"sem"' -DKBUILD_MODNAME='"sem"' /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.c | scripts/genksyms/genksyms    -r /dev/null > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.tmp_sem.ver; ld -m elf_x86_64  -z max-page-size=0x200000 -r -o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.tmp_sem.o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o -T /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.tmp_sem.ver; mv -f /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.tmp_sem.o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o; rm -f /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.tmp_sem.ver; fi
+set -e;   
+set -e;   
+set -e;   
+set -e;   
+set -e;   { echo  /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o;  echo; } > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.mod; printf '%s\n' 'cmd_/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.mod := { echo  /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.o;  echo; } > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.mod' > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/.sem.mod.cmd
+{   echo /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/sem.ko; :; } \
+| awk '!x[$0]++' - > /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/modules.order
+:
+ 
+test -e ./Module.symvers || ( \
+echo; \
+echo "  WARNING: Symbol version dump ./Module.symvers"; \
+echo "           is missing; modules will have no dependencies and modversions."; \
+echo )
+make -f ./scripts/Makefile.modpost
+ 
+cat: 
+/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/modules.order
+: No such file or directory
+
+
+echo '  Building modules, stage 2.'
+set -e;  echo '  MODPOST 0 modules';  sed 's/ko$/o/' /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/modules.order | scripts/mod/modpost -m -a -i ./Module.symvers -I /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/Module.symvers  -o /home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/Module.symvers     -s -T - 
+make -f ./scripts/Makefile.modfinal
+ 
+cat: 
+/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock/modules.order
+: No such file or directory
+
+
+:
+make[1]: Leaving directory '/usr/src/linux-headers-5.4.0-120-generic'
+gcc -o write_app1 write_app1.c
+gcc -o write_app2 write_app2.c
+gcc -o read_app read_app.c
+make: Leaving directory '/home/niks/Documents/CDAC-DESD/ELDD/sem_trylock'
+ 
