@@ -1,0 +1,1 @@
+cmd_/home/niks/Documents/CDAC-DESD/ELDD/timers/timer.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/niks/Documents/CDAC-DESD/ELDD/timers/timer.ko /home/niks/Documents/CDAC-DESD/ELDD/timers/timer.o /home/niks/Documents/CDAC-DESD/ELDD/timers/timer.mod.o;  true
