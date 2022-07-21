@@ -1,14 +1,14 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
-# GNU Make 4.1
+# GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 25 17:44:30 2022
+# Make data base, printed on Sun Jul  3 10:44:10 2022
 
 # Variables
 
@@ -22,6 +22,8 @@ GNUMAKEFLAGS :=
 DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -37,15 +39,15 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/niks/Documents/CDAC-DESD/ELDD/ioctl
+CURDIR := /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl
 # makefile
 SHELL = /bin/sh
 # environment
-VTE_VERSION = 5202
+VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:25298
+JOURNAL_STREAM = 8:38264
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -53,25 +55,23 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 2
+IM_CONFIG_PHASE = 1
 # environment
-USERNAME = niks
+USERNAME = nikhil
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=0cb8777bf48bfe5a48b4f58f62c10fa5
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /usr/bin/code
 # environment
-MANAGERPID = 1013
-# environment
-CLUTTER_IM_MODULE = xim
+MANAGERPID = 983
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/niks/Documents/CDAC-DESD/ELDD/ioctl
+VSCODE_CWD = /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -79,11 +79,9 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/niks:@/tmp/.ICE-unix/1040,unix/niks:/tmp/.ICE-unix/1040
+SESSION_MANAGER = local/niks:@/tmp/.ICE-unix/1354,unix/niks:/tmp/.ICE-unix/1354
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
-# environment
-TEXTDOMAIN = im-config
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -91,11 +89,11 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = c74c4c9a9bd44098888466378fe0a8c8
+INVOCATION_ID = e6596b89fcc8400787bc38a8eb957082
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
@@ -105,15 +103,13 @@ SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
 DISPLAY = :0
 # environment
-GTK_IM_MODULE = ibus
-# environment
 VSCODE_PIPE_LOGGING = true
 # makefile (from 'Makefile', line 5)
-PWD := /home/niks/Documents/CDAC-DESD/ELDD/ioctl
+PWD := /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl
+# default
+.LOADED := 
 # environment
-XDG_SEAT = seat0
-# environment
-SSH_AGENT_PID = 1135
+SSH_AGENT_PID = 1304
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -121,31 +117,27 @@ GTK_MODULES = gail:atk-bridge
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/niks
+HOME = /home/nikhil
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/niks/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/nikhil/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-LOGNAME = niks
+LOGNAME = nikhil
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-MAKE_VERSION := 4.1
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile (from 'Makefile', line 1)
 obj-m := cdev_ioctl.o
-# environment
-XDG_VTNR = 2
 # environment
 MAKELEVEL := 0
 # environment
@@ -155,19 +147,19 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-QT_IM_MODULE = xim
+QT_IM_MODULE = ibus
 # environment
 SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b9db42a4-f206-46f8-927d-f5ce4d1763f2.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-29d1ff4e-2d97-481f-8a41-478346be3a82.sock
 # makefile (from 'Makefile', line 3)
 KERNELDIR = /lib/modules/$(shell uname -r)/build
+# default
+MAKE_VERSION := 4.2.1
 # environment
-XDG_SESSION_ID = 2
-# environment
-USER = niks
+USER = nikhil
 # makefile
 .DEFAULT_GOAL := default
 # environment
@@ -176,6 +168,8 @@ XDG_CURRENT_DESKTOP = Unity
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /media/nikhil/CDAC/Github/CDAC-DESD/ELDD
 # default
 .VARIABLES := 
 # automatic
@@ -183,7 +177,7 @@ MAKE_COMMAND := make
 # environment
 LANGUAGE = en_IN:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-e0aba6e3-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-82fa104e-1.67.2-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -198,8 +192,8 @@ GDK_BACKEND = x11
 +F = $(notdir $+)
 # environment
 QT_ACCESSIBILITY = 1
-# environment
-TEXTDOMAINDIR = /usr/share/locale/
+# 'override' directive
+.SHELLSTATUS := 0
 # default
 MAKEFILES := 
 # automatic
@@ -209,13 +203,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-QT4_IM_MODULE = xim
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ba66118f_360a_4200_bd7b_c01b5a7e0fc8
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/c4e9c7f4_a584_427c_9f79_e0a8f97573a2
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.70
+GNOME_TERMINAL_SERVICE = :1.130
 # default
 SUFFIXES := 
 # environment
@@ -231,11 +223,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 5356
+VSCODE_PID = 6463
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691362b6bbd5
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=0cb8777bf48bfe5a48b4f58f62c10fa5
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=16/140=11%
+# Load=107/1024=10%, Rehash=0, Collisions=14/136=10%
 
 # Pattern-specific Variable Values
 
@@ -243,9 +235,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b39a23395c1a5b2308c1691
 
 # Directories
 
-# . (device 2049, inode 1049307): 7 files, no impossibilities.
+# . (device 2053, inode 3018): 8 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -263,7 +255,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-25 17:43:43.595786538
+#  Last modified 2022-07-03 09:17:44.9780112
 #  File has been updated.
 #  Successfully updated.
 
@@ -279,7 +271,6 @@ default:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 clean:
 #  Implicit rule search has not been done.
@@ -296,6 +287,7 @@ install:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules_install
 
 # files hash-table stats:
+ 
 # Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
@@ -303,12 +295,12 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 127 B / avg = 8 B
-# current buf: size = 8162 B / used = 127 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 135 B / avg = 8 B
+# current buf: size = 8162 B / used = 135 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 31%
+# strcache performance: lookups = 23 / hit rate = 30%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Sat Jun 25 17:44:30 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Sun Jul  3 10:44:10 2022
 
  

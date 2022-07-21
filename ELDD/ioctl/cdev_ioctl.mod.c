@@ -1,15 +1,18 @@
-#include <linux/build-salt.h>
 #include <linux/module.h>
+#define INCLUDE_VERMAGIC
+#include <linux/build-salt.h>
+#include <linux/elfnote-lto.h>
 #include <linux/vermagic.h>
 #include <linux/compiler.h>
 
 BUILD_SALT;
+BUILD_LTO_INFO;
 
 MODULE_INFO(vermagic, VERMAGIC_STRING);
 MODULE_INFO(name, KBUILD_MODNAME);
 
 __visible struct module __this_module
-__section(.gnu.linkonce.this_module) = {
+__section(".gnu.linkonce.this_module") = {
 	.name = KBUILD_MODNAME,
 	.init = init_module,
 #ifdef CONFIG_MODULE_UNLOAD
@@ -23,12 +26,12 @@ MODULE_INFO(retpoline, "Y");
 #endif
 
 static const struct modversion_info ____versions[]
-__used __section(__versions) = {
-	{ 0xb3753869, "module_layout" },
+__used __section("__versions") = {
+	{ 0xd9726f80, "module_layout" },
 	{ 0x6091b333, "unregister_chrdev_region" },
-	{ 0x78f44845, "cdev_del" },
-	{ 0x7afe113a, "cdev_add" },
-	{ 0xa3036ef8, "cdev_init" },
+	{ 0x1bcee483, "cdev_del" },
+	{ 0xd5f10699, "cdev_add" },
+	{ 0x4240b5cb, "cdev_init" },
 	{ 0xe3ec2f2b, "alloc_chrdev_region" },
 	{ 0xc5850110, "printk" },
 	{ 0xbdfb6dbb, "__fentry__" },
@@ -37,4 +40,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "BF5491298EAA0AF38280A97");
+MODULE_INFO(srcversion, "0488750409F7F6B1B0C60FB");

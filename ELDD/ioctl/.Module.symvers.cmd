@@ -1,0 +1,1 @@
+cmd_/media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/Module.symvers := sed 's/\.ko$$/\.o/' /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/modules.order | scripts/mod/modpost -m -a  -o /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/Module.symvers -e -i Module.symvers   -T -

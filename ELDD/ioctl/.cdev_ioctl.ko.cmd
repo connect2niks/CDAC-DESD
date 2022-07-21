@@ -1,0 +1,1 @@
+cmd_/media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/cdev_ioctl.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/cdev_ioctl.ko /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/cdev_ioctl.o /media/nikhil/CDAC/Github/CDAC-DESD/ELDD/ioctl/cdev_ioctl.mod.o;  true

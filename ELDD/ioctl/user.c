@@ -18,6 +18,6 @@ int main(int argc, char const *argv[])
     printf("fd = %d\n",fd);
 
     ioctl(fd,CMD_1);
-    ioctl(fd,CMD_2,0);
+    ioctl(fd,CMD_2,8);
     return 0;
 }
