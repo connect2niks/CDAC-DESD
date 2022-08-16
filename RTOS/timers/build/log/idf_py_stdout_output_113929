@@ -1,0 +1,45 @@
+-- Found Git: /usr/bin/git (found version "2.25.1") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/niks/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Check for working C compiler: /home/niks/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Check for working C compiler: /home/niks/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/niks/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++
+-- Check for working CXX compiler: /home/niks/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/niks/Documents/github/CDAC-DESD/RTOS/timers/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/niks/.espressif/python_env/idf5.0_py3.8_env/bin/python (found version "3.8.10") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "desdrtosproject" version: b5e8118
+-- Adding linker script /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/niks/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_serial_slave_link esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport tinyusb ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/niks/esp/esp-idf/components/app_trace /home/niks/esp/esp-idf/components/app_update /home/niks/esp/esp-idf/components/bootloader /home/niks/esp/esp-idf/components/bootloader_support /home/niks/esp/esp-idf/components/bt /home/niks/esp/esp-idf/components/cmock /home/niks/esp/esp-idf/components/console /home/niks/esp/esp-idf/components/cxx /home/niks/esp/esp-idf/components/driver /home/niks/esp/esp-idf/components/efuse /home/niks/esp/esp-idf/components/esp-tls /home/niks/esp/esp-idf/components/esp_adc /home/niks/esp/esp-idf/components/esp_common /home/niks/esp/esp-idf/components/esp_eth /home/niks/esp/esp-idf/components/esp_event /home/niks/esp/esp-idf/components/esp_gdbstub /home/niks/esp/esp-idf/components/esp_hid /home/niks/esp/esp-idf/components/esp_http_client /home/niks/esp/esp-idf/components/esp_http_server /home/niks/esp/esp-idf/components/esp_https_ota /home/niks/esp/esp-idf/components/esp_https_server /home/niks/esp/esp-idf/components/esp_hw_support /home/niks/esp/esp-idf/components/esp_lcd /home/niks/esp/esp-idf/components/esp_local_ctrl /home/niks/esp/esp-idf/components/esp_netif /home/niks/esp/esp-idf/components/esp_phy /home/niks/esp/esp-idf/components/esp_pm /home/niks/esp/esp-idf/components/esp_psram /home/niks/esp/esp-idf/components/esp_ringbuf /home/niks/esp/esp-idf/components/esp_rom /home/niks/esp/esp-idf/components/esp_serial_slave_link /home/niks/esp/esp-idf/components/esp_system /home/niks/esp/esp-idf/components/esp_timer /home/niks/esp/esp-idf/components/esp_wifi /home/niks/esp/esp-idf/components/espcoredump /home/niks/esp/esp-idf/components/esptool_py /home/niks/esp/esp-idf/components/fatfs /home/niks/esp/esp-idf/components/freertos /home/niks/esp/esp-idf/components/hal /home/niks/esp/esp-idf/components/heap /home/niks/esp/esp-idf/components/http_parser /home/niks/esp/esp-idf/components/idf_test /home/niks/esp/esp-idf/components/ieee802154 /home/niks/esp/esp-idf/components/json /home/niks/esp/esp-idf/components/log /home/niks/esp/esp-idf/components/lwip /home/niks/Documents/github/CDAC-DESD/RTOS/timers/main /home/niks/esp/esp-idf/components/mbedtls /home/niks/esp/esp-idf/components/mqtt /home/niks/esp/esp-idf/components/newlib /home/niks/esp/esp-idf/components/nvs_flash /home/niks/esp/esp-idf/components/openthread /home/niks/esp/esp-idf/components/partition_table /home/niks/esp/esp-idf/components/perfmon /home/niks/esp/esp-idf/components/protobuf-c /home/niks/esp/esp-idf/components/protocomm /home/niks/esp/esp-idf/components/pthread /home/niks/esp/esp-idf/components/sdmmc /home/niks/esp/esp-idf/components/soc /home/niks/esp/esp-idf/components/spi_flash /home/niks/esp/esp-idf/components/spiffs /home/niks/esp/esp-idf/components/tcp_transport /home/niks/esp/esp-idf/components/tinyusb /home/niks/esp/esp-idf/components/ulp /home/niks/esp/esp-idf/components/unity /home/niks/esp/esp-idf/components/usb /home/niks/esp/esp-idf/components/vfs /home/niks/esp/esp-idf/components/wear_levelling /home/niks/esp/esp-idf/components/wifi_provisioning /home/niks/esp/esp-idf/components/wpa_supplicant /home/niks/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build

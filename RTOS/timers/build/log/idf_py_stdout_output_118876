@@ -1,0 +1,20 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/bootloader/esp-idf/esptool_py && /home/niks/.espressif/python_env/idf5.0_py3.8_env/bin/python /home/niks/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/bootloader/bootloader.bin
+Bootloader binary size 0x66d0 bytes. 0x930 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/cdacmain.c.obj
+../main/cdacmain.c: In function 'app_main':
+../main/cdacmain.c:36:16: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   36 |     BaseType_t res;
+      |                ^~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Building C object CMakeFiles/desdrtosproject.elf.dir/project_elf_src_esp32.c.obj
+[6/8] Linking CXX executable desdrtosproject.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.2.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/desdrtosproject.bin
+[8/8] cd /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/esp-idf/esptool_py && /home/niks/.espressif/python_env/idf5.0_py3.8_env/bin/python /home/niks/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/partition_table/partition-table.bin /home/niks/Documents/github/CDAC-DESD/RTOS/timers/build/desdrtosproject.bin
+desdrtosproject.bin binary size 0x2b6e0 bytes. Smallest app partition is 0x100000 bytes. 0xd4920 bytes (83%) free.
