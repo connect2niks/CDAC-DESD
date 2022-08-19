@@ -1,0 +1,272 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7020
+ho 0 tail 12 room 4
+load:0x40078000,len:15388
+load:0x40080400,len:3824
+entry 0x4008064c
+[0;32mI (28) boot: ESP-IDF v5.0-dev-4723-g30e8f19f5a 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 22:48:23[0m
+[0;32mI (29) boot: chip revision: V100[0m
+[0;32mI (33) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07a44h ( 31300) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=00017a6c vaddr=3ffb0000 size=02650h (  9808) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0001a0c4 vaddr=40080000 size=05f54h ( 24404) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=156c8h ( 87752) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=000356f0 vaddr=40085f54 size=05838h ( 22584) load[0m
+[0;32mI (183) esp_image: segment 5: paddr=0003af30 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (205) cpu_start: Starting app cpu, entry point is 0x40081064[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     desdrtosproject[0m
+[0;32mI (229) cpu_start: App version:      febdb40[0m
+[0;32mI (234) cpu_start: Compile time:     Aug 18 2022 22:48:13[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  eeb030b7c398a0d1...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.0-dev-4723-g30e8f19f5a[0m
+[0;32mI (253) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (260) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFB2F48 len 0002D0B8 (180 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 4008B78C len 00014874 (82 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (300) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+MT: DESD RTOS Project
+Main Thread: Task Created Successfully :prio : 1
+temperature_task2 : Started
+pressure_task1 : Started
+processing_task3 : Started
+High prio_task4 : Started
+Processing task : Data Received : 101
+High Prio:Data Received : 201
+High Prio:Data Received : 102
+High Prio:Data Received : 103
+High Prio:Data Received : 104
+High Prio:Data Received : 105
+High Prio:Data Received : 202
+High Prio:Data Received : 106
+High Prio:Data Received : 107
+High Prio:Data Received : 108
+High Prio:Data Received : 109
+High Prio:Data Received : 110
+High Prio:Data Received : 203
+High Prio:Data Received : 111
+High Prio:Data Received : 112
+High Prio:Data Received : 113
+High Prio:Data Received : 114
+High Prio:Data Received : 115
+High Prio:Data Received : 204
+High Prio:Data Received : 116
+High Prio:Data Received : 117
+High Prio:Data Received : 118
+High Prio:Data Received : 119
+High Prio:Data Received : 120
+High Prio:Data Received : 205
+High Prio:Data Received : 121
+High Prio:Data Received : 122
+High Prio:Data Received : 123
+High Prio:Data Received : 124
+High Prio:Data Received : 125
+High Prio:Data Received : 206
+High Prio:Data Received : 126
+High Prio:Data Received : 127
+High Prio:Data Received : 128
+High Prio:Data Received : 129
+High Prio:Data Received : 130
+High Prio:Data Received : 207
+High Prio:Data Received : 131
+High Prio:Data Received : 132
+High Prio:Data Received : 133
+High Prio:Data Received : 134
+High Prio:Data Received : 135
+High Prio:Data Received : 208
+High Prio:Data Received : 136
+High Prio:Data Received : 137
+High Prio:Data Received : 138
+High Prio:Data Received : 139
+High Prio:Data Received : 140
+High Prio:Data Received : 209
+High Prio:Data Received : 141
+High Prio:Data Received : 142
+High Prio:Data Received : 143
+Processing task : Data Received : 144
+Processing task : Data Received : 145
+Processing task : Data Received : 210
+Processing task : Data Received : 146
+Processing task : Data Received : 147
+Processing task : Data Received : 148
+Processing task : Data Received : 149
+Processing task : Data Received : 150
+Processing task : Data Received : 211
+Processing task : Data Received : 151
+Processing task : Data Received : 152
+Processing task : Data Received : 153
+Processing task : Data Received : 154
+Processing task : Data Received : 155
+Processing task : Data Received : 212
+Processing task : Data Received : 156
+Processing task : Data Received : 157
+Processing task : Data Received : 158
+Processing task : Data Received : 159
+Processing task : Data Received : 160
+Processing task : Data Received : 213
+Processing task : Data Received : 161
+Processing task : Data Received : 162
+Processing task : Data Received : 163
+Processing task : Data Received : 164
+Processing task : Data Received : 165
+Processing task : Data Received : 214
+Processing task : Data Received : 166
+Processing task : Data Received : 167
+Processing task : Data Received : 168
+Processing task : Data Received : 169
+Processing task : Data Received : 170
+Processing task : Data Received : 215
+Processing task : Data Received : 171
+Processing task : Data Received : 172
+Processing task : Data Received : 173
+Processing task : Data Received : 174
+Processing task : Data Received : 175
+Processing task : Data Received : 216
+Processing task : Data Received : 176
+Processing task : Data Received : 177
+Processing task : Data Received : 178
+Processing task : Data Received : 179
+Processing task : Data Received : 180
+Processing task : Data Received : 217
+Processing task : Data Received : 181
+Processing task : Data Received : 182
+Processing task : Data Received : 183
+Processing task : Data Received : 184
+Processing task : Data Received : 185
+Processing task : Data Received : 218
+Processing task : Data Received : 186
+Processing task : Data Received : 187
+Processing task : Data Received : 188
+Processing task : Data Received : 189
+Processing task : Data Received : 190
+Processing task : Data Received : 219
+Processing task : Data Received : 191
+Processing task : Data Received : 192
+Processing task : Data Received : 193
+Processing task : Data Received : 194
+Processing task : Data Received : 195
+Processing task : Data Received : 220
+Processing task : Data Received : 196
+Processing task : Data Received : 197
+Processing task : Data Received : 198
+Processing task : Data Received : 199
+Processing task : Data Received : 200
+Processing task : Data Received : 221
+Processing task : Data Received : 201
+Processing task : Data Received : 202
+Processing task : Data Received : 203
+Processing task : Data Received : 204
+Processing task : Data Received : 205
+Processing task : Data Received : 222
+Processing task : Data Received : 206
+Processing task : Data Received : 207
+Processing task : Data Received : 208
+Processing task : Data Received : 209
+Processing task : Data Received : 210
+Processing task : Data Received : 223
+Processing task : Data Received : 211
+Processing task : Data Received : 212
+Processing task : Data Received : 213
+Processing task : Data Received : 214
+Processing task : Data Received : 215
+Processing task : Data Received : 224
+Processing task : Data Received : 216
+Processing task : Data Received : 217
+Processing task : Data Received : 218
+Processing task : Data Received : 219
+Processing task : Data Received : 220
+Processing task : Data Received : 225
+Processing task : Data Received : 221
+Processing task : Data Received : 222
+Processing task : Data Received : 223
+Processing task : Data Received : 224
+Processing task : Data Received : 225
+Processing task : Data Received : 226
+Processing task : Data Received : 226
+Processing task : Data Received : 227
+Processing task : Data Received : 228
+Processing task : Data Received : 229
+Processing task : Data Received : 230
+Processing task : Data Received : 227
+Processing task : Data Received : 231
+Processing task : Data Received : 232
+Processing task : Data Received : 233
+Processing task : Data Received : 234
+Processing task : Data Received : 235
+Processing task : Data Received : 228
+Processing task : Data Received : 236
+Processing task : Data Received : 237
+Processing task : Data Received : 238
+Processing task : Data Received : 239
+Processing task : Data Received : 240
+Processing task : Data Received : 229
+Processing task : Data Received : 241
+Processing task : Data Received : 242
+High Prio:Data Received : 243
+Processing task : Data Received : 244
+Processing task : Data Received : 245
+Processing task : Data Received : 230
+Processing task : Data Received : 246
+Processing task : Data Received : 247
+Processing task : Data Received : 248
+Processing task : Data Received : 249
+Processing task : Data Received : 250
+Processing task : Data Received : 231
+Processing task : Data Received : 251
+Processing task : Data Received : 252
+Processing task : Data Received : 253
+Processing task : Data Received : 254
+Processing task : Data Received : 255
+Processing task : Data Received : 232
+Processing task : Data Received : 256
+Processing task : Data Received : 257
+Processing task : Data Received : 258
+Processing task : Data Received : 259
+Processing task : Data Received : 260
+Processing task : Data Received : 233
+Processing task : Data Received : 261
+Processing task : Data Received : 262
+Processing task : Data Received : 263
+Processing task : Data Received : 264
+Processing task : Data Received : 265
+Processing task : Data Received : 234
+Processing task : Data Received : 266
+Processing task : Data Received : 267
+Processing task : Data Received : 268
+Processing task : Data Received : 269
+Processing task : Data Received : 270
+Processing task : Data Received : 235
+Processing task : Data Received : 271
