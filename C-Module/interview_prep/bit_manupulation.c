@@ -75,10 +75,13 @@ void swap(int *x, int *y)
 void even_odd(int x)
 {
 	int mask = 0x01;
-	if((x&mask)==0)
+/*	if((x&mask)==0)
 		printf("a is even\n");
 	else
-		printf("a is odd\n");
+	printf("a is odd\n");
+*/
+	printf(((x&mask==0)?"even":"odd"));
+	printf("\n");
 }
 void clear_rightmost(int x)
 {
