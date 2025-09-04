@@ -14,7 +14,7 @@ void arraysorting(int *a1, int m, int *a2, int n)
         a1[k--] = (a1[i] > a2[j])?a1[i--]:a2[j--];
     }
     
-    while(j>=0)
+    while(j>=0)    // copy remaining
     a1[k--] = a2[j--];
     
     for(int i=0; i<6; i++)
