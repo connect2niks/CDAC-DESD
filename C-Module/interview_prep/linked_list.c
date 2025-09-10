@@ -173,21 +173,61 @@ struct node *addbefore(struct node *head,int data,int item)
 
 struct node *del(struct node *head,int data)
 {
+	struct node *p, *tmp;
+	if(head == NULL)
+	{
+		printf("List is empty\n");
+		return head;
+	}
 
+	if(head->data == data)
+	{
+		tmp = head;
+		head = head->link;
+		free(tmp);
+		return head;
+	}
+	p=head;
+	while(p->link!=NULL)
+	{
+		if(p->link->data == data)
+		{
+			tmp = p->link;
+			p->link = tmp->link;
+			free(tmp);
+			return head;
+		}
+		p = p->link;
+	}
+	printf("%d element not found\n",data);
+	return head;
 }
 
 struct node *reverse(struct node *head)
 {
-
+	struct node *prev,*ptr,*next;
+	prev = NULL;
+	ptr = head;
+	while(ptr!=NULL)
+	{
+		next = ptr->link;
+		ptr->link = prev;
+		prev = ptr;
+		ptr = next;
+	}
+	head = prev;
+	return head;
 }
 
 
 int main()
 {
 	int n,pos,item;
+	
 	printf("Enter number of nodes:");
 	scanf("%d",&n);
 	int data[n];
+	
 	printf("Enter data to be inserted:");
 	scanf("%d",&data[0]);
 	struct node* head = NULL;
@@ -198,17 +238,41 @@ int main()
 		scanf("%d",&data[i]);
 		head = addend(head,data[i]);
 	}
+	printList(head);
 
-	printf("Enter data and pos : ");
+	printf("Enter data and pos for insert data at specific position: ");
 	scanf("%d%d",&data[0],&pos);
 	head = InsertAtPos(head, data[0], pos);
 	printList(head);
+	
+	printf("sorted LL - ");
 	sortlist(head);
 	printList(head);
+	
 	count(head);
-	printf("Enter the item you find\n");
+	
+	printf("Enter the item you want to find in LL\n");
 	scanf("%d",&item);
 	search(head,item);
+	
+	printf("Enter the data and item for add after: ");
+	scanf("%d%d",&data[0],&data[1]);
+	head = addafter(head,data[0],data[1]);
+	printList(head);
+
+	printf("Enter the data and item for add before: ");
+        scanf("%d%d",&data[0],&data[1]);
+        head = addbefore(head,data[0],data[1]);
+	printList(head);
+	
+	printf("Enter the data you want to delete: ");
+	scanf("%d",&item);
+	head = del(head,item);
+	printList(head);
+
+	printf("Reversed LL - ");	
+	head = reverse(head);
+	printList(head);
 	return 0;
 
 }
