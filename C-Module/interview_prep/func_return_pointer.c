@@ -1,3 +1,4 @@
+// function return pointer
 #include <stdio.h>
 
 int *func(float *p, int a);

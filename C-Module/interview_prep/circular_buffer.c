@@ -20,7 +20,6 @@ bool cb_push(cir_buf* buff, int val)
 		printf("Buffer is full\n");
 		return false;
 	}
-
 	buff->arr[buff->head] = val;
 	buff->head = (buff->head + 1)%10;
 	return true;
@@ -33,17 +32,14 @@ bool cb_pop(cir_buf* buff, int* val)
 		printf("buffer is empty\n");
 		return false;
 	}
-
 	*val = buff->arr[buff->tail];
 	buff->tail = (buff->tail +1)%10;
 	return true;
-
 }
 int main()
 {
 	cir_buf cb;
 	cb_init(&cb);
-
 	for(int i=0; i<7; i++)
 	cb_push(&cb, i+1);
 	int val;
