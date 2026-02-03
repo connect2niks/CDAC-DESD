@@ -1,19 +1,53 @@
 /*
  * slow and fast pointers/tortoise and hare
+ * startingloop()
+ * findloop
  * createlist()
  * revlist()
  * findmid()
  * printlist()
   */
 
-
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 typedef struct node{
     int data;
     struct node *link;
 }node;
+
+node *statingloop(node *head){
+    node *slow, *fast;
+    slow = head;
+    fast = head;
+    while(fast!=NULL && fast->link!=NULL){
+        slow = slow->link;
+        fast = fast->link->link;
+        if(slow == fast){
+            slow = head;
+            while(slow!=fast){
+            slow = slow->link;
+            fast = fast->link;
+            }
+            return slow;
+        }
+    }
+    return NULL;
+}
+
+bool findloop(node *head){
+    node *slow, *fast;
+    slow = head;
+    fast = head;
+    while(fast!=NULL && fast->link!=NULL){
+        slow = slow->link;
+        fast = fast->link->link;
+        if(slow == fast)
+        return true;
+    }
+    return false;
+}
 
 node *findmid(node *head){
     node *slow,*fast;
@@ -83,6 +117,17 @@ int main(){
     
     node *mid = findmid(head);
     printf("Middle Node: %d \n",mid->data);
+    
+    if(findloop(head))
+    printf("There is a loop in the LL\n");
+    else
+    printf("Linear LL\n");
+    
+    node *strt = statingloop(head);
+    if(strt)
+    printf("starting point: %d\n",strt->data);
+    else
+    printf("NO Loop\n");
     
     return 0;
 }
