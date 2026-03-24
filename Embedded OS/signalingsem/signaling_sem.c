@@ -34,14 +34,18 @@ void* processingthread (void* data)
 int main(int argc, char const *argv[])
 {
     pthread_t inputTid,processingTid;
+    
     sem_init(&sem_p2i,0,1);
     sem_init(&sem_i2p,0,0);
 
     pthread_create(&inputTid,NULL,inputthread,NULL);
     pthread_create(&processingTid,NULL,processingthread,NULL);
+    
     pthread_join(inputTid,NULL);
     pthread_join(processingTid,NULL);
+    
     sem_destroy(&sem_p2i);
     sem_destroy(&sem_i2p);
+    
     return 0;
 }
