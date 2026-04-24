@@ -9,7 +9,7 @@ void displaybits(unsigned int a){
 }
 int main()
 {
-    unsigned int a = 0b10101010;
+    unsigned int a = 0b10011001;
     displaybits(a);
     a = ((a&0X55)<<1)|((a&0XAA)>>1);
     displaybits(a);

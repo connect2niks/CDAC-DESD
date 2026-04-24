@@ -19,7 +19,7 @@ char* mystrstr(char* str1, char* str2)
 int main()
 {
     char str1[] = "hello nikhil yadav";
-    char str2[] =  "\0";
+    char str2[] =  "nikhil";
     char* p = mystrstr(str1, str2);
     if((char*) p == NULL) printf("string not found");
     else printf("%s",p);
