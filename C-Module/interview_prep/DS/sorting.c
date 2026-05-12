@@ -113,11 +113,9 @@ void mergesort(int arr[], int lb, int ub){
 /* main function */
 
 int main(){
-	int arr[SIZE] = {0,1,2,3,4,5,6,7,9,8};
+	int arr[SIZE] = {4,3,2,1,0,9,8,7,6,5};
 	printf("Unsorted array: ");
-	for(int i=0; i<SIZE; i++){
-		printf("%d, ",arr[i]);
-	}
+	printarr(arr);
 	printf("\n");
 
 //	bubblesort(arr);
@@ -129,13 +127,13 @@ int main(){
 //	selectionsort(arr);
 //	printf("\n");
 	
-	quicksort(arr);
-	printf("\n");
-	
-//	mergesort(arr, 0, SIZE-1);
-//	printf("Merge sort: ");
-//	printarr(arr);
+//	quicksort(arr);
 //	printf("\n");
+	
+	mergesort(arr, 0, SIZE-1);
+	printf("Merge sort: ");
+	printarr(arr);
+	printf("\n");
 	
 	return 0;
 }

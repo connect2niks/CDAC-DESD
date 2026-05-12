@@ -40,8 +40,9 @@ int main()
 {
 	cir_buf cb;
 	cb_init(&cb);
-	for(int i=0; i<7; i++)
+	for(int i=0; i<10; i++)
 	cb_push(&cb, i+1);
+
 	int val;
 	//for(int i=0; i<3; i++)
 	if(cb_pop(&cb,&val))
